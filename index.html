@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trạng Code - Phòng Chống Lừa Đảo Trực Tuyến</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo.jpg" alt="Trạng Code Logo">
+                    <span>CFF Checker</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="about.html">Về doanh nghiệp</a></li>
+                    <li><a href="#scams">Loại lừa đảo</a></li>
+                    <li><a href="#tips">Mẹo phòng tránh</a></li>
+                    <li><a href="#footer">Liên hệ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    
+                    Phòng Chống <span class="highlight">Lừa Đảo</span> Trực Tuyến
+                </h1>
+                <p class="hero-subtitle">
+                    Trong 3 năm gần đây (2022–2024), Việt Nam ghi nhận trên 21.000 vụ lừa đảo trực tuyến, 
+                        tổng thiệt hại ước tính hơn 8.200 tỷ đồng. Khoảng 70% vụ lừa đảo thực hiện qua email, 
+                        mạng xã hội và website giả mạo.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">
+                            <span class="stat-value">21,000</span>
+                            <span class="stat-plus">+</span>
+                        </div>
+                        <span class="stat-label">Vụ lừa đảo</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">
+                            <span class="stat-value">8,200</span>
+                            <span class="stat-unit">tỷ</span>
+                        </div>
+                        <span class="stat-label">Thiệt hại</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">
+                            <span class="stat-value">52</span>
+                            <span class="stat-percent">%</span>
+                        </div>
+                        <span class="stat-label">Người dùng bị ảnh hưởng</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Kiểm tra email</button>
+                    <button class="btn btn-secondary">Tìm hiểu thêm</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="shield-layout">
+                    <div class="shield-center">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="shield-card card-top-left">
+                        <div class="card-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <span>An toàn</span>
+                    </div>
+                    <div class="shield-card card-top-right">
+                        <div class="card-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <span>Bảo vệ</span>
+                    </div>
+                    <div class="shield-card card-bottom-right">
+                        <div class="card-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <span>Bảo mật</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Check Section - Between Hero and Body -->
+    <section id="safety-check" class="safety-check-between">
+        <div class="container">
+            <div class="check-container">
+                <div class="check-form">
+                    <h3>Kiểm tra email, link hoặc số điện thoại</h3>
+                    <div class="input-group">
+                        <input type="text" id="checkInput" placeholder="Nhập email, link hoặc số điện thoại cần kiểm tra">
+                        <button class="btn btn-primary" onclick="checkSafety()">
+                            <i class="fas fa-search"></i>
+                            Kiểm tra
+                        </button>
+                    </div>
+                    <div class="check-result" id="checkResult"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Đối tượng dễ bị lừa đảo</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        52% người dùng Việt Nam thừa nhận từng nhận được email hoặc link giả mạo mời nhận quà, trúng thưởng, thông báo trúng tuyển, đề nghị chuyển tiền, xác nhận tài khoản ngân hàng, v.v. (theo khảo sát VNCERT).
+                        Đối tượng bị ảnh hưởng nhiều nhất: Sinh viên năm 1–3, nhân viên văn phòng, chủ shop online, phụ huynh học sinh, người lớn tuổi sử dụng internet chưa thành thạo.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Sinh viên năm 1-3</h4>
+                            <p>Thiếu kinh nghiệm, dễ bị lừa qua các chương trình học bổng giả</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-briefcase"></i>
+                            <h4>Nhân viên văn phòng</h4>
+                            <p>Thường xuyên nhận email công việc, dễ bị lừa qua email giả mạo</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h4>Chủ shop online</h4>
+                            <p>Giao dịch thường xuyên, dễ bị lừa qua đơn hàng giả</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Phụ huynh học sinh</h4>
+                            <p>Lo lắng cho con, dễ bị lừa qua thông báo học phí giả</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-friends"></i>
+                            <h4>Người lớn tuổi</h4>
+                            <p>Ít kinh nghiệm internet, dễ bị lừa qua các thông báo giả</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scam Types Section -->
+    <section id="scams" class="scams">
+        <div class="container">
+            <h2 class="section-title">Các Loại Lừa Đảo Phổ Biến</h2>
+            <div class="scam-grid">
+                <div class="scam-card">
+                    <div class="scam-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Giả Mạo</h3>
+                    <p>Email giả mạo ngân hàng, PayPal thông báo tài khoản bất thường, yêu cầu xác nhận thông tin.</p>
+                    <div class="scam-signs">
+                        <h4>Dấu hiệu nhận biết:</h4>
+                        <ul>
+                            <li>Địa chỉ email không chính thức</li>
+                            <li>Yêu cầu thông tin cá nhân</li>
+                            <li>Link đáng ngờ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scam-card">
+                    <div class="scam-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Phishing Links</h3>
+                    <p>Đường link lừa lấy mật khẩu Facebook, Gmail, tài khoản trường học, ví điện tử.</p>
+                    <div class="scam-signs">
+                        <h4>Dấu hiệu nhận biết:</h4>
+                        <ul>
+                            <li>URL không chính thức</li>
+                            <li>Giao diện giống thật</li>
+                            <li>Yêu cầu đăng nhập</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scam-card">
+                    <div class="scam-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>File Độc Hại</h3>
+                    <p>Email giả mạo doanh nghiệp gửi phiếu mời, hóa đơn, hợp đồng chứa mã độc.</p>
+                    <div class="scam-signs">
+                        <h4>Dấu hiệu nhận biết:</h4>
+                        <ul>
+                            <li>File đính kèm đáng ngờ</li>
+                            <li>Yêu cầu tải xuống</li>
+                            <li>Nội dung không liên quan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scam-card">
+                    <div class="scam-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Giả Danh Trường Học</h3>
+                    <p>Chiêu trò giả danh trường học, tuyển sinh, học bổng online, "săn học phí rẻ".</p>
+                    <div class="scam-signs">
+                        <h4>Dấu hiệu nhận biết:</h4>
+                        <ul>
+                            <li>Thông tin không chính xác</li>
+                            <li>Yêu cầu chuyển tiền gấp</li>
+                            <li>Liên hệ không chính thức</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="tips">
+        <div class="container">
+            <h2 class="section-title">Lời Khuyên Hữu Ích</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-number">01</div>
+                    <h3>Kiểm tra nguồn gốc</h3>
+                    <p>Luôn kiểm tra địa chỉ email, website và thông tin người gửi trước khi tin tưởng.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">02</div>
+                    <h3>Không chia sẻ thông tin</h3>
+                    <p>Không bao giờ chia sẻ mật khẩu, thông tin ngân hàng qua email hoặc tin nhắn.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">03</div>
+                    <h3>Kiểm tra link</h3>
+                    <p>Hover chuột qua link để xem địa chỉ thực, không click vào link đáng ngờ.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">04</div>
+                    <h3>Bật xác thực 2 yếu tố</h3>
+                    <p>Bật xác thực 2 yếu tố cho tất cả tài khoản quan trọng.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">05</div>
+                    <h3>Cập nhật phần mềm</h3>
+                    <p>Luôn cập nhật hệ điều hành và phần mềm bảo mật mới nhất.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">06</div>
+                    <h3>Báo cáo lừa đảo</h3>
+                    <p>Báo cáo ngay khi phát hiện lừa đảo để bảo vệ cộng đồng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Trạng Code</h3>
+                    <p>Bảo vệ cộng đồng khỏi lừa đảo trực tuyến</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết</h4>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="javascript:void(0)">Về doanh nghiệp</a></li>
+                        <li><a href="#scams">Loại lừa đảo</a></li>
+                        <li><a href="#tips">Mẹo phòng tránh</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tài nguyên</h4>
+                    <ul>
+                        <li><a href="#">Hướng dẫn bảo mật</a></li>
+                        <li><a href="#">Báo cáo lừa đảo</a></li>
+                        <li><a href="#">Tin tức bảo mật</a></li>
+                        <li><a href="#">Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>1900 1234</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>baocao@trangcode.vn</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-globe"></i>
+                            <span>www.trangcode.vn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trạng Code. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
